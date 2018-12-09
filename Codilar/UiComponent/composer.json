@@ -1,0 +1,29 @@
+{
+  "name": "codilar/magento-2-ui-component",
+  "type": "magento2-module",
+  "description": "Magento 2 UI Component",
+  "license": "osl-3.0",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  ],
+  "authors": [
+    {
+      "name": "",
+      "homepage": ""
+    }
+  ],
+  "require": {
+    "magento/framework": "101.0.*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Codilar\\UiComponent\\": ""
+    }
+  }
+}
