@@ -7,6 +7,26 @@
 -->
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <fieldset name="other_settings" sortOrder="30">
+        <fieldset  name="head">
+            <field name="head_shortcut_icon" formElement="imageUploader">
+                <settings>
+                    <notice translate="true">Not all browsers support all these formats!</notice>
+                    <label translate="true">Favicon Icon</label>
+                    <componentType>imageUploader</componentType>
+                </settings>
+                <formElements>
+                    <imageUploader>
+                        <settings>
+                            <allowedExtensions>jpg jpeg gif png ico apng</allowedExtensions>
+                            <maxFileSize>2097152</maxFileSize>
+                            <uploaderConfig>
+                                <param xsi:type="string" name="url">theme/design_config_fileUploader/save</param>
+                            </uploaderConfig>
+                        </settings>
+                    </imageUploader>
+                </formElements>
+            </field>
+        </fieldset>
         <fieldset name="header">
             <field name="header_logo_src" formElement="imageUploader">
                 <settings>
